@@ -1,5 +1,5 @@
 # Introduction
-## Description
+## Project Description
 
 Our project focuses around the Internet of Things Network (IoT) and working with Intrusion Detection, which is meant to identify malicious attacks across networks towards users. Some of the categories we will be analyzing involve DDoS, Brute Force, Spoofing, etc. We are building off an existing work that has several subcategories for individual types of intrusions, including their instances and features. The purpose of the project is meant to provide a dataset for a predictive model that can identify and detect multiple kinds of intrusions. 
 
