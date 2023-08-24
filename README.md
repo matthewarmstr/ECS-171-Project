@@ -1,3 +1,3 @@
 For our project, we decided to use a neural network to classify the type of instrusion based on the collections of 50 attributes in our dataset. To preprocess our data, we decided to normalize and standardize??? all of our attributes since they were all numerical.
 
-There are 1191264 observations in our dataset. There are no missing data points for any observation. (add sentence about scale). The data attributes can be classified having a normal distribution, but certain attributes describing network/application protocols (HTTP, TCP, UDP) have binary values.
+There are 1191264 observations in our dataset. There are no missing data points for any observation. (add sentence about scale). The data attributes can be classified having a normal distribution, but certain attributes describing network/application protocols (HTTP, TCP, UDP) have binary values. We decided to use min-max scaling 
