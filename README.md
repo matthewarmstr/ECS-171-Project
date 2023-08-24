@@ -7,7 +7,7 @@ Our project focuses around the Internet of Things Network (IoT) and working with
 
 For our project, we decided to use a neural network to classify the type of instrusion based on the collections of 50 attributes in our dataset. To preprocess our data, we decided to **normalize** and **standardize** all of our attributes since they were all numerical.
 
-Right now, while we may be using a neural network as our primary model, we will likely incorporate other models in the future as we continue our analysis of the dataframe.
+While we may be currently using a neural network as our primary model, we will likely incorporate other models in the future as we continue our analysis of the dataframe.
 
 ## Data Exploration
 
