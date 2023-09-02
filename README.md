@@ -23,3 +23,15 @@ To measure the performance of the initial model, multiple scores were computed o
 
 [to do: describe fitting conditions of initial model]
 
+## Comparing Training and Testing Error
+The comparison between training and testing can be found in the table below:
+
+|           | Training            | Testing              | Training - Testing    |
+|-----------|---------------------|----------------------|-----------------------|
+| Accuracy  | 0.8060159984402103  | 0.8059375536439757   | 0.0000784447962346    |
+| Precision | 0.6432565512429487  | 0.5876964796968105   | 0.0555600715461       |
+| Recall    | 0.49033112045593064 | 0.49158825864505606  | −0.00125713818913     |
+| MSE       | 0.0108864577983841  | 0.010906346173480552 | −0.0000198883750965   |
+
+The initial model has a good accuracy score at roughly 80%, with no noticeable difference between the training and testing results. The difference between the recall and MSE is the same, whereas the precision between the training and testing datasets is more significant at 5.56%. 
+
