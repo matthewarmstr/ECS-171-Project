@@ -21,7 +21,7 @@ When setting up the initial model, the number of inputs for the neural network w
 
 To measure the performance of the initial model, multiple scores were computed on the training and testing prediction data. Some of these scores included the mean squared error and average accuracy, precision, and recall across all output class predictions. The classification report was also generated for the training and testing predictions, which expanded the precision, recall, and f1 scores for each class of intrusion. After compiling and training the initial model with 50 epochs, the categorical crossentropy loss remained at about 43.2%. The average accuracy when predicting with the training and testing sets was around 80.6%, but the average precision and recall scores collectively ranged from 49% to 64%. This difference in average performance scores occured because many output classes were never predicted to be true (which defaulted their precision and recall scores in the classification report to 0). A few of these classes included 'Backdoor_Malware', 'BrowserHijacking', and 'Recon-PingSweep', with most of them having low support scores compared to the other classes. Other erronous behavior occured when the model did not list any output class as true. These output statistics show that optimizations can be made to the neural network's hidden layer node structure and/or the overall training process to improve the performance of our model.
 
-[to do: describe fitting conditions of initial model]
+Two additional models were generated to determine the fitting conditions of our initial model ...
 
 ## Comparing Training and Testing Error
 The comparison between training and testing can be found in the table below:
@@ -33,5 +33,5 @@ The comparison between training and testing can be found in the table below:
 | Recall    | 0.49033112045593064 | 0.49158825864505606  | −0.00125713818913     |
 | MSE       | 0.0108864577983841  | 0.010906346173480552 | −0.0000198883750965   |
 
-The initial model has a good accuracy score at roughly 80%, with no noticeable difference between the training and testing results. The difference between the recall and MSE is the same, whereas the precision between the training and testing datasets is more significant at 5.56%. 
+The initial model has a good accuracy score at roughly 80%, with no noticeable difference between the training and testing results. The recall and MSE between the training and testing predictions are extremely similar, whereas the precision varied slightly more at 5.56%. 
 
