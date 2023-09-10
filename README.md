@@ -85,7 +85,7 @@ The MSE values of this model are very close to the MSE values of our initial mod
 
 The training and testing scores for each of the fitted comparison models in relation to the initial model were generated and plotted in a scatter plot. 
 
-![image](![image](https://github.com/matthewarmstr/ECS-171-Project/assets/130258852/9d53a397-98e3-4f45-8164-71291ec5bfa4))
+![image](https://github.com/matthewarmstr/ECS-171-Project/assets/130258852/ca1244e9-f4e4-475a-bc39-ca79beb29a52)
 
 Since all five models produced similar MSE scores, it is difficult to determine the exact fitting conditions of our initial model. However, given that the MSE values from the training and testing predictions are very close to one another (0.0112 and 0.0158) and that the gap between the testing and training MSE scores does not widen when the model complexity is increased, it is likely that our initial model is experiencing either underfitting or adequate fitting conditions. More complex models need to be designed and implemented to improve the performance of our model.
 
@@ -101,6 +101,6 @@ In the first revision of our initial model, this exact approach was undertaken. 
 
 ![image](https://github.com/matthewarmstr/ECS-171-Project/assets/130258852/be5c4554-28c0-46c5-bcbf-5d1b2e8f865a)
 
-After adjusting the initial model structure to accommodate the reduced number of output classes (27 instead of 34), running K-fold cross-validation with 10 folds on the new model resulted in an average accuracy score of 76.6% (~1.67% better than the initial model) and an average MSE of 1.59% (~0.266% lower than the initial model). 
+After adjusting the initial model structure to accommodate the reduced number of output classes (27 instead of 34), running K-fold cross-validation with 10 folds on the new model resulted in an average accuracy score of 76.6% (~1.67% better than the initial model) and an average MSE of 1.59% (~0.266% lower than the initial model). This small improvement indicates that the overall model performance would generally increase with the removal of the intrusion classes that are extremely undersampled.
 
 # Conclusion
