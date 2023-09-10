@@ -31,7 +31,7 @@ Overall, the initial model performed relatively well, with the difference betwee
 
 ### Comparison Model 1
 
-The first comparison model used to find the fitting conditions followed the basis of our initial model but with a lower complexity. This was a 3-layer neural network with 16, 15, and 34 nodes. Again, it included the ReLU activation function as part of its hidden layers, and the softmax activation function in its output layer. This model was given the same testing and training data as the initial model, and was fit with 50 epochs. The final cross-entropy loss was about 43.7%.  Precision, recall, and F1 scores were calculated for each type of IoT traffic intrusion. Training and testing metrics are shown below.
+The first comparison model used to find the fitting conditions followed the basis of our initial model but with a lower complexity. This was a 3-layer neural network with 16, 15, and 34 nodes. Again, it included the ReLU activation function as part of its hidden layers, along with the softmax activation function in its output layer. This model was given the same testing and training data as the initial model and was fit with 50 epochs. The final cross-entropy loss was about 43.7%.  Precision, recall, and F1 scores were calculated for each type of IoT traffic intrusion. Training and testing metrics are shown below.
 
 |                | Training             | Testing              | Training - Testing   |
 |----------------|----------------------|----------------------|----------------------|
@@ -101,6 +101,6 @@ In the first revision of our initial model, this exact approach was undertaken. 
 
 ![image](https://github.com/matthewarmstr/ECS-171-Project/assets/130258852/be5c4554-28c0-46c5-bcbf-5d1b2e8f865a)
 
-After adjusting the initial model structure to accommodate the reduced number of output classes (27 instead of 34), running K-fold cross-validation with 10 folds on the new model resulted in an average accuracy score of 76.6% (~1.67% better than the initial model) and an average MSE of 1.59% (~0.266% lower than the initial model). This small improvement indicates that the overall model performance would generally increase with the removal of the intrusion classes that are extremely undersampled.
+After adjusting the initial model structure to accommodate the reduced number of output classes (27 instead of 34), running K-fold cross-validation with 10 folds on the new model resulted in an average accuracy score of 76.6% (~1.67% better than the initial model) and an average MSE of 1.59% (~0.266% higher than the initial model). This small improvement indicates that the overall model performance would generally increase with the removal of the intrusion classes that are extremely undersampled.
 
 # Conclusion
