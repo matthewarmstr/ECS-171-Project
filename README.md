@@ -149,7 +149,7 @@ Similar to Revision 2, the generalized model from K-fold also led to overall bet
 
 ### Revision 4: Adding More Nodes, Changing from Descending Structure to Pyramid Node Structure (Same Number of Hidden Layers)
 
-For Revision 4 as our last model, we chose not only to add more nodes, but we also went about changing from a Descending Structure to a Pyramid Node Structure, while keeping the same number of hidden layers. 
+For Revision 4 as our last model, we chose not only to add more nodes, but also went about changing from a Descending Structure to a Pyramid Node Structure, while keeping the same number of hidden layers. 
 
 |                | Training | Testing  | Training - Testing   |
 |----------------|----------|----------|----------------------|
@@ -162,11 +162,11 @@ Once again, K-fold also showed improvements in the generalized model, but the re
 
 ## Final Model/Summary
 
-Looking at the data from the revised models, we can conclude that the 3rd revised model (Revision 3) yielded the best results. This model included 70 nodes in the input layer, followed by four hidden layers, each with 60, 50, 40, and 30 nodes. All the non-input layers utilized the ReLU activation function, and the output layer was given the softmax activation function. The model was optimized with stochastic gradient descent and used categorical cross-entropy as its loss function. The changes compared to the the initial model included adding more nodes, more hidden layers, introducing cross-validation via k-fold, and dropping low impactful data. This final revised model had an training average accuracy of 79.61%, an average precision of 79.61%, average recall of 61.73%, and a MSE of 1.45%. 
+Looking at the data from the revised models, we can conclude that the 3rd revised model (Revision 3) yielded the best results. This model included 70 nodes in the input layer, followed by four hidden layers, each with 60, 50, 40, and 30 nodes. All the non-input layers utilized the ReLU activation function, and the output layer was given the softmax activation function. The model was optimized with stochastic gradient descent and used categorical cross-entropy as its loss function. The changes compared to the the initial model included adding more nodes, more hidden layers, introducing cross-validation via k-fold, and dropping low-impactful data. This final revised model had a training average accuracy of 79.61%, an average precision of 79.61%, an average recall of 61.73%, and an MSE of 1.45%. 
 
-Plotting the training and testing MSE scores for the three revised models resulted in the graph shown below. Because the model in Revision 3 (points on right side of plot) used a pyramid node structure, their MSE-complexity trends are likely different than those in the models from Revisions 2 and 3 that used a descending structure.
+Plotting the training and testing MSE scores for the three revised models resulted in the graph shown below. Because the model in Revision 3 (points on the right side of the plot) used a pyramid node structure, their MSE-complexity trends are likely different than those in the models from Revisions 2 and 3 that used a descending structure.
 
-[image - add later]
+![image](https://github.com/matthewarmstr/ECS-171-Project/assets/130258852/f3d420df-ec82-40e7-998e-ec68647f1753)
 
 The detailed classification report showing the performance scores for each output class can be found in the notebook file in the final section titled 'Final Model and its Fitting Characteristics'.
 
@@ -180,12 +180,12 @@ As shown, the size of samples ranged from 23 (Uploading Attack) to 161281 (DDoS-
 
 # Conclusion
 
-Along the course of the project, we tried different versions of a neural network and dropped specific data attributes and output classes that influenced the performance of each model iteration. K-fold cross-validation was also used between each model iteration to quickly generalize the model's performance and determine whether new model ierations would result in sufficient performance improvements. Overall, these efforts did help improve the performance metrics of the model. Looking back, we wish we did have more time to test more versions of the model with changes in different aspects (different amount of hidden layers, nodes, epochs, activation functions...etc.), since testing took a long time for each model we created. While the average precision and accuracy of our model was relatively high, the recall was significantly lower, so future models would hopefully be designed to avoid false negatives and improve recall. 
+During the course of the project, we tried different versions of a neural network and dropped specific data attributes and output classes that influenced the performance of each model iteration. K-fold cross-validation was also used between each model iteration to quickly generalize the model's performance and determine whether new model iterations would result in sufficient performance improvements. Overall, these efforts did help improve the performance metrics of the model. Looking back, we wish we had more time to test more versions of the model with changes in different aspects (different amounts of hidden layers, nodes, epochs, activation functions...etc.) since testing took a long time for each model we created. While the average precision and accuracy of our model were relatively high, the recall was significantly lower, so future models would hopefully be designed to avoid false negatives and improve recall. 
 
 We also realized that trying to oversample and undersample would skew the results significantly and create a biased model, lowering the accuracy significantly. This would be because some classificationss would have 300 instances and others would have thousands, so an attempt to generalize them actually did not help the model fitting. We would hope that in order to fix this in the future, the data we handle would have a balanced number of observations across every classification type.
 
 # Collaboration
-Matthew Armstrong (Main Code Contributor, Writer): Led the team in the direction of how to improve the models. Coded most of the models and supervised most of the model training. Helped write the results of each model's classfication report and the overall results.
+Matthew Armstrong (Main Code Contributor, Writer): Led the team in the direction of how to improve the models. Coded most of the models and supervised most of the model training. Helped write the results of each model's classification report and the overall results.
 Matthew Tom (Writer): Started and contributed to a majority of the README.md during the abstraction and data exploration milestones, helped analyze performance results during model construction.
-Rahul Prabhu: (Code Contributor, Writer): Assisted with writing, formatting, and interpreting the results of each revised model into the README.md, contributed with coding the data exploration/visualization, researched how to efficiently display the data using catplots due to the high number of distinct classsifications.
+Rahul Prabhu: (Code Contributor, Writer): Assisted with writing, formatting, and interpreting the results of each revised model into the README.md, contributed with coding the data exploration/visualization, researched how to efficiently display the data using catplots due to the high number of distinct classifications.
 Kyle Tsuji (Code Contributor): Generated and formatted models for Revisions 2 and 3, helped determine how to create and manipulate revision models.
