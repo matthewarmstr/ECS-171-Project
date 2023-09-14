@@ -186,6 +186,9 @@ We also realized that trying to oversample and undersample would skew the result
 
 # Collaboration
 Matthew Armstrong (Main Code Contributor, Writer): Led the team in the direction of how to improve the models. Coded most of the models and supervised most of the model training. Helped write the results of each model's classification report and the overall results.
+
 Matthew Tom (Writer): Started and contributed to a majority of the README.md during the abstraction and data exploration milestones, helped analyze performance results during model construction.
+
 Rahul Prabhu: (Code Contributor, Writer): Assisted with writing, formatting, and interpreting the results of each revised model into the README.md, contributed with coding the data exploration/visualization, researched how to efficiently display the data using catplots due to the high number of distinct classifications.
+
 Kyle Tsuji (Code Contributor): Generated and formatted models for Revisions 2 and 3, helped determine how to create and manipulate revision models.
